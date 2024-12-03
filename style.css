@@ -48,6 +48,7 @@ nav {
     height: 2.5rem;
     border-radius: 25px;
     border: none;
+    cursor: pointer;
 }
 
 main {
@@ -86,6 +87,7 @@ main {
     border-radius: 25px;
     border: none;
     box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    cursor: pointer;
 }
 
 .ponto {
@@ -130,7 +132,7 @@ main {
 }
 
 .texto-sobre {
-    width: 610px;
+    max-width: 610px;
     margin-top: 20px;
     font-size: 20px;
     color: #E2E2E2;
@@ -144,6 +146,7 @@ main {
     border-radius: 25px;
     padding: 15px;
     border: none;
+    cursor: pointer;
 }
 
 .dois {
@@ -166,10 +169,12 @@ main {
     justify-content: center;
     gap: 15px;
     font-family: "Nunito", sans-serif;
+    margin-top: 100px;
 }
 
 .texto-solucao {
-    width: 662px;
+    max-width: 662px;
+    margin: auto;
 }
 
 .subtitulo-solucao {
@@ -178,17 +183,26 @@ main {
 
 .titulo-solucao {
     font-size: 55px;
+    margin-top: 30px;
+}
+
+.paragrafo-solucao {
+    font-family: "Quicksand", sans-serif;
+    color: #E2E2E2;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 20px;
 }
 
 .item-solucao {
-    width: 262px;
-    height: 269px;
+    width: 242px;
+    height: 249px;
     border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30%;
+    gap: 20%;
     font-family: "Quicksand", sans-serif;
     font-size: 24px;
     text-align: center;
@@ -199,4 +213,184 @@ main {
 
 .divisoria-solucao {
     display: flex;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.titulo-projetos {
+    font-family: "Nunito", sans-serif;
+    font-size: 55px;
+}
+
+.paragrafo-projetos {
+    font-size: 19px;
+    line-height: 34px;
+    color: #E2E2E2;
+    text-align: center;
+}
+
+.itens-projetos {
+    display: flex;
+    gap: 5%;
+    margin-top: 30px;
+}
+
+.item-projetos > p {
+    font-size: 24px;
+}
+
+.btn-projetos {
+    width: 226px;
+    height: 48px;
+    border: 1px solid;
+    border-radius: 24px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 70px;
+}
+
+.depoimentos > h3 {
+    font-size: 24px;
+    color: #E2E2E2;
+    opacity: 90%;
+}
+
+.depoimentos > h2 {
+    font-size: 50px;
+}
+
+.itens-depoimentos {
+    display: flex;
+    gap: 30px;
+}
+
+.item-depoimentos {
+    width: 380px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 25px;
+    background-color: #0B0F15;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.308);
+}
+
+.pessoa {
+    display: flex;
+    gap: 15px;
+}
+
+.pessoa > h4 {
+    padding-top: 10px;
+}
+
+.item-depoimentos > h4 {
+    font-size: 20px;
+}
+
+.texto-depoimentos {
+    font-size: 18px;
+    padding-top: 15px;
+    line-height: 28px;
+}
+
+.parceria {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.container-texto-parceria {
+    padding-top: 30px;
+}
+
+.titulo-parceria {
+    max-width: 491px;
+    font-size: 50px;
+    font-family: "Nunito", sans-serif;
+}
+
+.paragrafo-parceria {
+    max-width: 593px;
+    font-size: 20px;
+    line-height: 34px;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 33px;
+}
+
+.btn-parceria {
+    width: 257px;
+    height: 48px;
+    border-radius: 24px;
+    border: none;
+    margin-top: 33px;
+    cursor: pointer;
+}
+
+.img-1-parceria {
+    position: relative;
+    left: 1%;
+    top: 40px;
+}
+
+footer {
+    height: 448px;
+    margin-top: 100px;
+    background-color: #383638;
+    font-family: "Quicksand", sans-serif;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lista-rodape {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.itens-rodape > p {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.lista-sociais-rodape {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itens-sociais-rodape > p {
+    border-top: 1px solid;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.itens-sociais-rodape > a {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
 }
