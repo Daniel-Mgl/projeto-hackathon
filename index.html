@@ -19,7 +19,7 @@
                 <li class="itens-cabecalho"><a href="#">Projetos</a></li>
                 <li class="itens-cabecalho"><a href="#">Contato</a></li>
             </ul>
-            <button class="btn-login" id="open-login-popup">LOGIN</button>
+            <button class="btn-login" id="open-login-popup"><a href="#">LOGIN</a></button>
 
         </nav>
     </header>
@@ -28,7 +28,7 @@
         <div class="container-principal">
             <h1>Mobilidade Inteligente para <br> Ribeirão Preto</h1>
             <p>Relate problemas, contribua para soluções e ajude a construir uma cidade mais eficiente.</p>
-            <button>Relatar Problema</button>
+            <button><a href="#">Relatar Problema</a></button>
         </div>
         <div class="img-principal">
             <img class="img-principal-1" src="img/Frame 27.png" alt="">
@@ -42,10 +42,12 @@
         <div class="container-texto-sobre">
             <p class="texto-sobre">O Mobilize RP foi criado por uma equipe apaixonada por inovação e mobilidade urbana. Nossa missão é resolver os desafios de mobilidade em Ribeirão Preto, promovendo integração, sustentabilidade e eficiência.</p>
             <p class="texto-sobre">Acreditamos que a tecnologia pode transformar o transporte público e tornar as cidades mais acessíveis para todos.</p>
-            <button class="btn-sobre">Quer saber mais ou Colaborar?</button>
+            <button class="btn-sobre"><a href="#">Quer saber mais ou Colaborar?</a></button>
             <button class="btn-sobre dois">
-                <i class="fa-regular fa-circle-play"></i>
-                Nossa história
+                <a href="#">
+                    <i class="fa-regular fa-circle-play"></i>
+                    Nossa história
+                </a>
             </button>
         </div>
     </section>
@@ -102,7 +104,7 @@
                 <p>EcoPoints</p>
             </div>
         </div>
-        <button class="btn-projetos">See All Portfolio</button>
+        <button class="btn-projetos"><a href="#">See All Portfolio</a></button>
     </section>
 
     <section class="depoimentos">
@@ -147,7 +149,7 @@
                 Seja reconhecido como parceiro em um movimento por uma mobilidade inteligente.
             </p>
             <button class="btn-parceria">
-                Seja Nosso Parceiro
+                <a href="">Seja Nosso Parceiro</a>
             </button>
         </div>
         <img class="img-1-parceria" src="img/Rectangle 839.png" alt="">
@@ -207,22 +209,24 @@
     </footer>
 
     <!-- Popup de Login -->
-<div class="popup-overlay" id="login-popup">
-    <div class="popup-content" id="popup-content">
-        <h1 class="titulo-login">Bem-vindo!</h1>
-        <p class="paragrafo-login">Faça login para continuar.</p>
-        <form action="#" method="POST" class="form-login">
-            <label for="email" class="label-login">E-mail</label>
-            <input type="email" id="email" name="email" class="input-login" placeholder="Digite seu e-mail" required>
-
-            <label for="senha" class="label-login">Senha</label>
-            <input type="password" id="senha" name="senha" class="input-login" placeholder="Digite sua senha" required>
-
-            <button type="submit" class="btn-login-popup">Entrar</button>
-        </form>
-        <button class="btn-close-popup" id="close-login-popup">Fechar</button>
+    <div class="popup-overlay" id="login-popup">
+        <div class="popup-content" id="popup-content">
+            <h1 class="titulo-login">Bem-vindo!</h1>
+            <p class="paragrafo-login">Faça login para continuar.</p>
+            <form action="#" method="POST" class="form-login">
+                <label for="email" class="label-login">E-mail</label>
+                <input type="email" id="email" name="email" class="input-login" placeholder="Digite seu e-mail" required>
+    
+                <label for="senha" class="label-login">Senha</label>
+                <input type="password" id="senha" name="senha" class="input-login" placeholder="Digite sua senha" required>
+                <a href="/pag-cadastro/index.html" class="paragrafo-cadastro">Faça seu Cadastro</a>
+    
+                <button type="submit" class="btn-login-popup">Entrar</button>
+            </form>
+            <button class="btn-close-popup" id="close-login-popup">Fechar</button>
+        </div>
     </div>
-</div>
-
+    
+    <script src="auth/login.js"></script>
 </body>
 </html>
