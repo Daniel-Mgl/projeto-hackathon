@@ -16,13 +16,18 @@ html, body {
 }
 
 nav {
+    width: 100%;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0 50px;
     box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
     position: relative;
+}
+
+nav > img {
+    height: 60px;
 }
 
 .logo-cabecalho {
@@ -43,7 +48,7 @@ nav {
     color: white;
 }
 
-.btn-cabecalho {
+.btn-login {
     width: 10rem;
     height: 2.5rem;
     border-radius: 25px;
@@ -69,7 +74,7 @@ main {
 
 .container-principal > h1 {
     font-family: "Nunito", sans-serif;
-    font-size: 64px;
+    font-size: 4rem;
     text-align: center;
 }
 
@@ -88,12 +93,6 @@ main {
     border: none;
     box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
     cursor: pointer;
-}
-
-.ponto {
-    position: absolute;
-    top: 20%;
-    left: 10%;
 }
 
 .sobre {
@@ -393,4 +392,107 @@ footer {
     font-size: 30px;
     text-decoration: none;
     color: white;
+}
+
+
+/** teste /**/
+
+/* Overlay do Popup */
+.popup-overlay {
+    display: none; /* Inicia oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Conteúdo do Popup */
+.popup-content {
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    background-color: #1C1C1C; /* Fundo escuro */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(49, 118, 245, 0.596);
+    cursor: grab; /* Indica que pode ser arrastado */
+    z-index: 1100;
+}
+
+/* Estilo do Título */
+.titulo-login {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+/* Estilo do Parágrafo */
+.paragrafo-login {
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    color: #CCCCCC;
+}
+
+/* Estilo do Formulário */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo dos Inputs */
+.input-login {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #AAAAAA;
+    border-radius: 5px;
+    background-color: #2C2C2C;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Estilo do Botão de Login Dentro do Popup */
+.btn-login-popup {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3176F5;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login-popup:hover {
+    background-color: #1D5DC8;
+}
+
+/* Botão de Fechar */
+.btn-close-popup {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F53D3D;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close-popup:hover {
+    background-color: #C82C2C;
 }

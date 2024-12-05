@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <script src="script.js" defer></script>
     <title>Projeto Hackathon</title>
 </head>
 <body>
     <header>
         <nav class="navegacao-cabecalho">
-            <div class="logo-cabecalho" style="height: 50px; width: 200px; border: 1px solid; background-color: white; color: black;">
-                <h1>Logo.</h1>
-            </div>
+            <img src="img/Frame 3.png" alt="">
             <ul class="lista-cabecalho">
                 <li class="itens-cabecalho"><a href="#">Início</a></li>
                 <li class="itens-cabecalho"><a href="#">Relatórios</a></li>
@@ -20,19 +19,19 @@
                 <li class="itens-cabecalho"><a href="#">Projetos</a></li>
                 <li class="itens-cabecalho"><a href="#">Contato</a></li>
             </ul>
-            <button class="btn-cabecalho">Contact us</button>
+            <button class="btn-login" id="open-login-popup">LOGIN</button>
+
         </nav>
     </header>
 
     <main>
         <div class="container-principal">
             <h1>Mobilidade Inteligente para <br> Ribeirão Preto</h1>
-            <p>Um Site multifuncional que une informações em tempo real, planejamento de trajetos e <br> incentivos para uso do transporte público e alternativas sustentáveis.</p>
+            <p>Relate problemas, contribua para soluções e ajude a construir uma cidade mais eficiente.</p>
             <button>Relatar Problema</button>
         </div>
         <div class="img-principal">
             <img class="img-principal-1" src="img/Frame 27.png" alt="">
-            <img class="ponto" src="img/Ellipse 90.png" alt="">
         </div>
     </main>
 
@@ -206,5 +205,24 @@
             </li>
         </ul>
     </footer>
+
+    <!-- Popup de Login -->
+<div class="popup-overlay" id="login-popup">
+    <div class="popup-content" id="popup-content">
+        <h1 class="titulo-login">Bem-vindo!</h1>
+        <p class="paragrafo-login">Faça login para continuar.</p>
+        <form action="#" method="POST" class="form-login">
+            <label for="email" class="label-login">E-mail</label>
+            <input type="email" id="email" name="email" class="input-login" placeholder="Digite seu e-mail" required>
+
+            <label for="senha" class="label-login">Senha</label>
+            <input type="password" id="senha" name="senha" class="input-login" placeholder="Digite sua senha" required>
+
+            <button type="submit" class="btn-login-popup">Entrar</button>
+        </form>
+        <button class="btn-close-popup" id="close-login-popup">Fechar</button>
+    </div>
+</div>
+
 </body>
 </html>
